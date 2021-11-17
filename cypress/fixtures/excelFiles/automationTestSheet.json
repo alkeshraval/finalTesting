@@ -1,0 +1,207 @@
+[
+    {
+        "sheetName": "homePage",
+        "content": [
+            {
+                "action": "visit",
+                "value": "https://www.telstra.com.au?livetest=EA_homepage",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "Verify: mbox placement 'homePersonal-banner-EA'",
+                "value": "",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "componentId",
+                "value": "",
+                "findBy": "xpath",
+                "findByValue": "div[data-personalisation-id='homePersonal-banner-EA']",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "validate",
+                "value": "Telstra Personal",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "",
+                "value": "This is our test campaign for the capability",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "",
+                "value": "Join now for your shot at 1 million Telstra Plus points",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "",
+                "value": "Eligibility criteria apply",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "",
+                "value": "Learn more",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "screenshot",
+                "value": "homePersonal-Banner-EA",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "cta",
+                "value": "",
+                "findBy": "text",
+                "findByValue": "Learn more",
+                "index": 0,
+                "__EMPTY": ""
+            },
+            {
+                "action": "componentId",
+                "value": "",
+                "findBy": "xpath",
+                "findByValue": "div[data-personalisation-id='mobileOnPlan-banner-EA']",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "validate",
+                "value": "Mobiles on a plan",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "screenshot",
+                "value": "homePersonal-Banner-EA_cta1",
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            }
+        ]
+    },
+    {
+        "sheetName": "upgradeNow",
+        "content": [
+            {
+                "action": "visit",
+                "value": "https://www.telstra.com.au/mobile-phones/upgrade-now?livetest=EA_takeover",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "Verify: mbox placement 'upgrade-banner-EA'",
+                "value": "",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "componentId",
+                "value": "",
+                "findBy": "xpath",
+                "findByValue": "div[data-personalisation-id='upgrade-banner-EA']",
+                "index": 0
+            },
+            {
+                "action": "validate",
+                "value": "Upgrade now",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "",
+                "value": "Join our",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "",
+                "value": "Join now for your shot at 1 million",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "",
+                "value": "Eligibility criteria apply",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "",
+                "value": "Enrol now",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "screenshot",
+                "value": "upgrade-banner-EA",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "cta",
+                "value": "",
+                "findBy": "text",
+                "findByValue": "Enrol now",
+                "index": ""
+            },
+            {
+                "action": "componentId",
+                "value": "",
+                "findBy": "xpath",
+                "findByValue": "div.HeadingTitle_title-base__3Gth6",
+                "index": ""
+            },
+            {
+                "action": "validate",
+                "value": "Telstra Plus",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            },
+            {
+                "action": "screenshot",
+                "value": "upgrade-banner-EA_cta1",
+                "findBy": "",
+                "findByValue": "",
+                "index": ""
+            }
+        ]
+    }
+]

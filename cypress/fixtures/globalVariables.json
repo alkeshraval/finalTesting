@@ -1,0 +1,12 @@
+{
+    "isValidate":true,
+    "componentId":null, 
+    "foundComponentElement":null, 
+    "isCta":false, 
+    "isFill" :false, 
+    "isExit": false, 
+    "isReport":false,
+    "number" : 0,
+    "action" : null,
+    "isEmptyValue" : false
+  }

@@ -1,0 +1,25 @@
+{   "viewportWidth":1000,
+    "viewportHeight":900,
+    "reporter":"mochawesome",
+    "video": false,
+    "reporterOptions": {
+        "reportDir":"cypress/reports",
+        "reportFilename":"CypressReport",
+        "overwrite":"true",
+        "html":"true",
+        "json":"true",
+        "reportPageTitle":"Automated Test Status",
+        "reportTitle":"Automated Test Reporting Dashboard",
+        "autoOpen":"false",
+        "showPassed":"true",
+        "showFailed":"true",
+        "charts":"true"
+    },
+    "screenshotsFolder": "cypress/screenshots",
+    "chromeWebSecurity" : false,
+    "pageLoadTimeout" : 60000,
+    "defaultCommandTimeout" : 60000,
+    "testFiles": [
+        "telstraAutomation/*.js"
+      ]
+}

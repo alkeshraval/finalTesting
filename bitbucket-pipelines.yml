@@ -1,0 +1,20 @@
+image: cypress/browsers:node12.14.1-chrome85-ff81
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script:
+            # Setup SSH Keys for Bitbucket
+            - mkdir -p ~/.ssh
+            - cat known_hosts >> ~/.ssh/known_hosts
+            - (umask 077 ; echo $BITBUCKET_SSH_KEY | base64 --decode > ~/.ssh/id_rsa)
+            - cat ~/.ssh/id_rsa
+            # process build
+            - npm install
+            - npm run test
+        artifacts:
+          # store any generates images and videos as artifacts
+          - cypress/screenshots/**
+          - cypress/reports/**
