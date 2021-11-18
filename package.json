@@ -9,7 +9,7 @@
     "clean:screenshots": "rmdir /S /Q cypress\\screenshots && mkdir cypress\\screenshots",
     "clean:uploadedExcelFiles": "rmdir /S /Q cypress\\fixtures\\excelFiles && mkdir cypress\\fixtures\\excelFiles",
     "beforTest": "npm run clean:reports && npm run clean:screenshots && npm run clean:uploadedExcelFiles",
-    "test": "cypress run --headed --browser chrome",
+    "test": "cypress run --headed --browser chrome --record --key ff783f2d-d1f7-4047-afe8-76d0760fe064",
     "runTest" : "node cypress/express/index.js"
   },
   "author": "Alkesh Raval",
