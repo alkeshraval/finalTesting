@@ -3,8 +3,6 @@ image: cypress/browsers:node12.14.1-chrome85-ff81
 pipelines:
   default:
     - step:
-        caches:
-          - node
         script:
             # Setup SSH Keys for Bitbucket
             - mkdir -p ~/.ssh
@@ -18,3 +16,4 @@ pipelines:
           # store any generates images and videos as artifacts
           - cypress/screenshots/**
           - cypress/reports/**
+          - cypress/fixtures/excelFiles/**
