@@ -18,3 +18,4 @@ pipelines:
           # store any generates images and videos as artifacts
           - cypress/screenshots/**
           - cypress/reports/**
+          - cypress/fixtures/excelFiles/**
