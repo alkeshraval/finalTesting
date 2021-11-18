@@ -1,4 +1,6 @@
-{   "viewportWidth":1000,
+{   
+    "projectId": "y7rptn",
+    "viewportWidth":1000,
     "viewportHeight":900,
     "reporter":"mochawesome",
     "video": false,
