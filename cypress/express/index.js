@@ -5,8 +5,10 @@ const fileSytem = require('fs-extra')       //  File System - for file manipulat
 const { convertIntoJson, runSheelCommand } = require("./utils")
 const fileUploadPath = path.resolve("./cypress", "fixtures/excelFiles");
 const reportFilePath = path.resolve("./cypress","reports")
+const cors = require('cors')
 
 const app = express()
+app.use(cors())
 app.use(busboy())
 app.use(express.static(path.join(__dirname)))
 app.use(express.static(path.join(__dirname,"../reports")));

@@ -3,7 +3,15 @@
         "sheetName": "homePage",
         "content": [
             {
-                "action": "visit",
+                "action": "timeout",
+                "value": 20000,
+                "findBy": "",
+                "findByValue": "",
+                "index": "",
+                "__EMPTY": ""
+            },
+            {
+                "action": "navigate",
                 "value": "https://www.telstra.com.au?livetest=EA_homepage",
                 "findBy": "",
                 "findByValue": "",
@@ -112,7 +120,7 @@
         "sheetName": "upgradeNow",
         "content": [
             {
-                "action": "visit",
+                "action": "navigate",
                 "value": "https://www.telstra.com.au/mobile-phones/upgrade-now?livetest=EA_takeover",
                 "findBy": "",
                 "findByValue": "",

@@ -8,5 +8,6 @@
     "isReport":false,
     "number" : 0,
     "action" : null,
-    "isEmptyValue" : false
-  }
+    "isEmptyValue" : false,
+    "timeOut" : 15000
+}
