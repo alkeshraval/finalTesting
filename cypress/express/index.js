@@ -6,18 +6,21 @@ const { convertIntoJson, runSheelCommand } = require("./utils")
 const fileUploadPath = path.resolve("./cypress", "fixtures/excelFiles");
 const reportFilePath = path.resolve("./cypress","reports")
 const cors = require('cors')
-
 const app = express()
 app.use(cors())
 app.use(busboy())
 app.use(express.static(path.join(__dirname)))
 app.use(express.static(path.join(__dirname,"../reports")));
+const portNumber = process.env.PORT || 3030;
 
 /* ========================================================== 
 Create a Route (/upload) to handle the Form submission 
 (handle POST requests to /upload)
 Express v4  Route definition
 ============================================================ */
+
+app.get('/', (req, res) => res.sendFile("home.html", { root: path.join(__dirname) }) );
+
  app
     .route('/upload')
     .post(async (req, res, next) => {
@@ -40,6 +43,6 @@ Express v4  Route definition
         })
     })
 
-const server = app.listen(3030, () => {
+const server = app.listen(portNumber, () => {
     console.log('Listening on port %d', server.address().port)
 })
