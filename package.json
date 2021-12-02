@@ -10,7 +10,8 @@
     "clean:uploadedExcelFiles": "rmdir /S /Q cypress\\fixtures\\excelFiles && mkdir cypress\\fixtures\\excelFiles",
     "beforTest": "npm run clean:reports && npm run clean:screenshots && npm run clean:uploadedExcelFiles",
     "test": "cypress run --headed --browser chrome",
-    "runTest": "node cypress/express/index.js"
+    "runTest": "node cypress/express/index.js",
+    "runTestHead": "cypress run --headless --browser chrome"
   },
   "author": "Alkesh Raval",
   "license": "ISC",
