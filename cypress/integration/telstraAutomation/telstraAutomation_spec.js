@@ -1,11 +1,9 @@
-debugger;
 import automationTestSheet from "../../fixtures/excelFiles/automationTestSheet";
 import  cypressObj from "../../fixtures/globalVariables";
 
-var cypressObjTimeOut = 15000;
+var cypressObjTimeOut = 60000;
 
 automationTestSheet.forEach(eachElements => {
-  debugger
     cypressObj.number = cypressObj.number + 1;
     describe(`${ cypressObj.number }. ${ eachElements.sheetName }`, () => {
       
