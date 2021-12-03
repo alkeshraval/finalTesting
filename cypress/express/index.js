@@ -11,7 +11,7 @@ app.use(cors())
 app.use(busboy())
 app.use(express.static(path.join(__dirname)))
 app.use(express.static(path.join(__dirname,"../reports")));
-const portNumber = 53391;//process.env.PORT || 3030;
+const portNumber = process.env.PORT || 3030;
 
 /* ========================================================== 
 Create a Route (/upload) to handle the Form submission 
@@ -24,7 +24,7 @@ app.get('/', (req, res) => res.sendFile("home.html", { root: path.join(__dirname
  app
     .route('/upload')
     .post(async (req, res, next) => {
-        await runSheelCommand("npm run beforTest")
+       // await runSheelCommand("npm run beforTest")
         var fstream;
         req.pipe(req.busboy);
         req.busboy.on('file', function (fieldname, file, filename) {           
