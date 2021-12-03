@@ -4,6 +4,7 @@
     "viewportHeight":900,
     "reporter":"mochawesome",
     "video": false,
+    "port": 2020,
     "reporterOptions": {
         "reportDir":"cypress/reports",
         "reportFilename":"CypressReport",
