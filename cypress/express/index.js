@@ -6,6 +6,7 @@ const { convertIntoJson, runSheelCommand } = require("./utils")
 const fileUploadPath = path.resolve("./cypress", "fixtures/excelFiles");
 const reportFilePath = path.resolve("./cypress","reports")
 const cors = require('cors')
+const open = require('open')
 const app = express()
 app.use(cors())
 app.use(busboy())
@@ -24,7 +25,10 @@ app.get('/', (req, res) => res.sendFile("home.html", { root: path.join(__dirname
  app
     .route('/upload')
     .post(async (req, res, next) => {
-       // await runSheelCommand("npm run beforTest")
+  
+      console.log(`Please Open this URL on browser :-  http://localhost:${server.address().port}`);
+      await open(`http://localhost:${portNumber}`, { app : { name : 'chrome' } } );
+       /* await runSheelCommand("npm run beforTest")
         var fstream;
         req.pipe(req.busboy);
         req.busboy.on('file', function (fieldname, file, filename) {           
@@ -40,7 +44,7 @@ app.get('/', (req, res) => res.sendFile("home.html", { root: path.join(__dirname
                 res.sendFile("CypressReport.html", { root: path.join(__dirname,"../reports") })
             })
 
-        })
+        }) */
     })
 
 const server = app.listen(portNumber, () => {
