@@ -27,9 +27,9 @@ app.get('/', (req, res) => res.sendFile("home.html", { root: path.join(__dirname
     .post(async (req, res, next) => {
   
       console.log(`Please Open this URL on browser :-  http://localhost:${server.address().port}`);
-      await open(`http://localhost:${portNumber}`, { app : { name : 'chrome' } } );
-       /* await runSheelCommand("npm run beforTest")
-        var fstream;
+     // await open(`http://localhost:${portNumber}`, { app : { name : 'chrome' } } );
+        await runSheelCommand("npm run test")
+       /* var fstream;
         req.pipe(req.busboy);
         req.busboy.on('file', function (fieldname, file, filename) {           
             console.log("Uploading: " + filename)
