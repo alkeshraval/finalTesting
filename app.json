@@ -1,12 +1,18 @@
 {
   "environments": {
     "test": {
+      "formation": {
+        "test": {
+          "quantity": 1,
+          "size": "standard-1x"
+        }
+      },
       "buildpacks": [
         { "url": "https://github.com/heroku/heroku-buildpack-google-chrome" },
         { "url": "heroku/nodejs" }
       ],
       "scripts": {
-        "test": "npx cypress install && npm run runTestHead"
+        "test": "npm test && npx cypress install && npm run runTestHead"
       }
     }
   }
