@@ -25,6 +25,7 @@
     "mochawesome": "^6.3.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0",
-    "xlsx": "^0.17.4"
+    "xlsx": "^0.17.4",
+    "open": "^8.4.0"
   }
 }
