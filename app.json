@@ -1,11 +1,9 @@
 {
-  "stack": "cedar-14",
   "environments": {
     "test": {
       "buildpacks": [
-        {
-          "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
-        }
+        { "url": "heroku/google-chrome" },
+        { "url": "heroku/nodejs" }
       ]
     }
   }
